@@ -9,6 +9,97 @@
 <meta name="theme-color" content="#071b31">
 <link rel="stylesheet" href="assets/style.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TaxiService","name":"Sowtadka Cabs","url":"https://www.sowtadkacabs.com/","telephone":"+91-7349591206","email":"sowtadkacabs@gmail.com","areaServed":"Bengaluru, Karnataka","priceRange":"₹₹"}</script>
+
+<style>
+  .destination-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:28px;
+}
+
+.destination-card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid var(--line);
+    transition:.3s;
+    box-shadow:0 10px 30px rgba(7,27,49,.08);
+}
+
+.destination-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 22px 45px rgba(7,27,49,.16);
+}
+
+
+
+.destination-card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:0 10px 30px rgba(7,27,49,.08);
+}
+
+.destination-card img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:100%;
+    aspect-ratio:auto;
+    object-fit:unset;
+    padding:0;
+    margin:0;
+}
+
+.destination-content{
+    padding:24px;
+}
+
+.destination-content span{
+    display:inline-block;
+    font-size:.78rem;
+    font-weight:800;
+    color:#b16c00;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    margin-bottom:10px;
+}
+
+.destination-content h3{
+    margin:0 0 12px;
+    font-size:1.8rem;
+    color:var(--navy);
+}
+
+.destination-content p{
+    color:var(--muted);
+    margin-bottom:20px;
+    line-height:1.7;
+}
+
+.destination-content a{
+    display:inline-flex;
+    font-weight:800;
+    color:#a96800;
+}
+
+.destination-content a:hover{
+    color:var(--navy);
+}
+
+@media(max-width:620px){
+
+.destination-grid{
+    grid-template-columns:1fr;
+}
+
+.destination-card img{
+    height:220px;
+}
+
+}
+</style>
 </head>
 <body>
 <header data-header>
@@ -119,39 +210,214 @@
 </div>
 </div>
 </section>
-<section class="section">
+<section class="section vehicle-gallery-section">
 <div class="container">
 <div class="section-head">
 <div>
-<span class="eyebrow">Popular getaways</span>
-<h2>Trade traffic for a better view.</h2>
-<p>Comfortable road trips from Bengaluru to South India's favourite destinations.</p>
+<span class="eyebrow">Vehicle gallery</span>
+<h2>Clean cabs, ready for your next ride.</h2>
+<p>Take a quick look at the vehicles available for local, airport and outstation travel.</p>
 </div>
+<a class="btn btn-dark" href="contact.html#booking">Book a vehicle</a>
 </div>
-<div class="grid grid-4 reveal">
-<article class="card destination">
-<span class="place-no">01 · KARNATAKA</span>
-<h3>Coorg</h3>
-<p>Coffee estates, waterfalls and mountain air.</p>
-</article>
-<article class="card destination">
-<span class="place-no">02 · KARNATAKA</span>
-<h3>Mysuru</h3>
-<p>Palaces, gardens and royal heritage.</p>
-</article>
-<article class="card destination">
-<span class="place-no">03 · KERALA</span>
-<h3>Munnar</h3>
-<p>Misty hills and endless tea gardens.</p>
-</article>
-<article class="card destination">
-<span class="place-no">04 · TAMIL NADU</span>
-<h3>Ooty</h3>
-<p>Cool weather, lakes and viewpoints.</p>
-</article>
+<div class="vehicle-gallery reveal">
+<figure class="gallery-item gallery-item-large"><img src="assets/images/WhatsApp Image 2026-06-25 at 11.09.57 (2).jpeg" alt="Sowtadka Cabs vehicle exterior"></figure>
+<figure class="gallery-item gallery-item-tall"><img src="assets/images/WhatsApp Image 2026-06-25 at 11.09.55 (1).jpeg" alt="Sowtadka Cabs vehicle interior"></figure>
+<figure class="gallery-item"><img src="assets/images/WhatsApp Image 2026-06-25 at 11.11.12.jpeg" alt="Comfortable cab seating"></figure>
+<figure class="gallery-item"><img src="assets/images/WhatsApp Image 2026-06-25 at 11.13.48.jpeg" alt="Well-maintained cab for Bangalore rides"></figure>
+<figure class="gallery-item"><img src="assets/images/WhatsApp Image 2026-06-25 at 11.44.34.jpeg" alt="Cab ready for outstation trips"></figure>
+<figure class="gallery-item gallery-item-tall"><img src="assets/images/WhatsApp Image 2026-06-25 at 11.09.57 (3).jpeg" alt="Clean vehicle cabin"></figure>
+<figure class="gallery-item gallery-item-tall"><img src="assets/images/crysta.png" alt="Crysta"></figure>
+<figure class="gallery-item gallery-item-tall"><img src="assets/images/hyrider.png" alt="Hyrider"></figure>
 </div>
 </div>
 </section>
+
+
+
+<section class="section section-soft">
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <div>
+                <span class="eyebrow">Popular Destinations</span>
+
+                <h2>Explore South India With Sowtadka Cabs</h2>
+
+                <p>
+                    Book comfortable outstation taxi services from Bangalore to South India's most popular tourist destinations with professional drivers and well-maintained vehicles.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="destination-grid reveal">
+
+            <!-- Coorg -->
+
+            <article class="destination-card">
+
+                <img src="assets/images/destinations/coorg.jpg" alt="Taxi from Bangalore to Coorg">
+
+                <div class="destination-content">
+
+                    <span>KARNATAKA</span>
+
+                    <h3>Coorg</h3>
+
+                    <p>
+                        Coffee plantations, Abbey Falls, Raja's Seat, Dubare Elephant Camp and breathtaking hill scenery.
+                    </p>
+
+                    <a href="#">Explore Trip →</a>
+
+                </div>
+
+            </article>
+
+            <!-- Mysore -->
+
+            <article class="destination-card">
+
+                <img src="assets/images/destinations/mysore.jpg" alt="Taxi from Bangalore to Mysore">
+
+                <div class="destination-content">
+
+                    <span>KARNATAKA</span>
+
+                    <h3>Mysore</h3>
+
+                    <p>
+                        Visit Mysore Palace, Chamundi Hills, Brindavan Gardens and famous heritage attractions.
+                    </p>
+
+                    <a href="#">Explore Trip →</a>
+
+                </div>
+
+            </article>
+
+            <!-- Hampi -->
+
+            <article class="destination-card">
+
+                <img src="assets/images/destinations/hampi.jpg" alt="Taxi from Bangalore to Hampi">
+
+                <div class="destination-content">
+
+                    <span>KARNATAKA</span>
+
+                    <h3>Hampi</h3>
+
+                    <p>
+                        Discover UNESCO World Heritage monuments, ancient temples and spectacular landscapes.
+                    </p>
+
+                    <a href="#">Explore Trip →</a>
+
+                </div>
+
+            </article>
+
+            <!-- Murudeshwara -->
+
+            <article class="destination-card">
+
+                <img src="assets/images/destinations/murudeshwara.jpg" alt="Taxi from Bangalore to Murudeshwara">
+
+                <div class="destination-content">
+
+                    <span>KARNATAKA</span>
+
+                    <h3>Murudeshwara & Honnavara</h3>
+
+                    <p>
+                        Enjoy coastal Karnataka, Murudeshwara Temple, beaches and scenic highway drives.
+                    </p>
+
+                    <a href="#">Explore Trip →</a>
+
+                </div>
+
+            </article>
+
+            <!-- Udupi -->
+
+            <article class="destination-card">
+
+                <img src="assets/images/destinations/udupi.jpg" alt="Taxi from Bangalore to Udupi">
+
+                <div class="destination-content">
+
+                    <span>KARNATAKA</span>
+
+                    <h3>Udupi</h3>
+
+                    <p>
+                        Famous Krishna Temple, Malpe Beach, St. Mary's Island and delicious coastal cuisine.
+                    </p>
+
+                    <a href="#">Explore Trip →</a>
+
+                </div>
+
+            </article>
+
+            <!-- Munnar -->
+
+            <article class="destination-card">
+
+                <img src="assets/images/destinations/munnar.jpg" alt="Taxi from Bangalore to Munnar">
+
+                <div class="destination-content">
+
+                    <span>KERALA</span>
+
+                    <h3>Munnar</h3>
+
+                    <p>
+                        Tea plantations, waterfalls, Eravikulam National Park and mist-covered mountains.
+                    </p>
+
+                    <a href="#">Explore Trip →</a>
+
+                </div>
+
+            </article>
+
+            <!-- Ooty -->
+
+            <article class="destination-card">
+
+                <img src="assets/images/destinations/ooty.jpg" alt="Taxi from Bangalore to Ooty">
+
+                <div class="destination-content">
+
+                    <span>TAMIL NADU</span>
+
+                    <h3>Ooty</h3>
+
+                    <p>
+                        Botanical Gardens, Ooty Lake, tea estates and relaxing Nilgiri mountain views.
+                    </p>
+
+                    <a href="#">Explore Trip →</a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
 <section class="section section-cream">
 <div class="container">
 <div class="dark-cta reveal">
